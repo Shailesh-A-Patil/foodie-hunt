@@ -1,12 +1,8 @@
 import OfferCarousel from "./OfferCarousel";
 import RestaurantCard from "./RestaurantCard";
 import ButtonList from "./ButtonList";
-import {
-  FOOD_CAROUSEL,
-  ITEM_CAROUSEL,
-  RESTAURANT_CAROUSEL,
-  RESTAURANT_DATA,
-} from "../mocks/data";
+import { Link } from "react-router-dom";
+import { FOOD_CAROUSEL, RESTAURANT_DATA } from "../mocks/data";
 import { useState } from "react";
 
 const Body = () => {
@@ -49,7 +45,15 @@ const Body = () => {
         <div className="flex flex-wrap m-auto justify-center">
           {" "}
           {filterRes.map((res) => {
-            return <RestaurantCard {...res.info} />;
+            return (
+              <Link
+                to={"/restaurant/" + res.info.id}
+                key={res.info.id}
+                className="pr-4"
+              >
+                <RestaurantCard {...res.info} />
+              </Link>
+            );
           })}
         </div>
       </div>
