@@ -4,11 +4,11 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <>
-      <div className="flex bg-gray-200 p-2 items-center justify-around">
+      <div className="flex flex-wrap bg-gray-200 p-2 items-center justify-around">
         <div className="text-xl font-bold my-auto">
           For better experience,download our app now
         </div>
-        <div className="flex justify-center h-8 gap-5">
+        <div className="flex justify-center w-28 h-8">
           <img
             src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/portal/m/play_store.png"
             alt="googleplay"
@@ -19,7 +19,7 @@ const Footer = () => {
           />
         </div>
       </div>
-      <footer className="flex justify-around bg-[#02060C] text-white py-12 px-8">
+      <footer className="flex flex-wrap justify-around bg-[#02060C] text-white py-12 px-8">
         <div>
           <h2 className="text-2xl font-bold"> Foodie Hunt</h2>
           <h4 className="text-gray-300 my-4">© 2023 made By Shailesh</h4>
