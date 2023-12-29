@@ -13,7 +13,7 @@ const Cart = () => {
     dispatch(clearCart());
   };
   return (
-    <div className="flex flex-col items-center">
+    <div className="flex flex-col min-h-96 items-center">
       <button
         onClick={() => handleClear()}
         className="p-3 m-4 border border-gray text-xl font-medium rounded-lg"

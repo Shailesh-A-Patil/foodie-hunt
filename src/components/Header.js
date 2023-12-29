@@ -18,9 +18,9 @@ const Header = () => {
         <li className="mx-2 px-2 hover:text-orange-500">
           <Link to={"/"}>Home</Link>
         </li>
-        <li className="mx-2 px-2">Online - {isOnline ? "✅" : "🔴"}</li>
+        <li className="mx-2 px-2">Online {isOnline ? "✅" : "🔴"}</li>
         <li className="mx-2 px-2 hover:text-orange-500">
-          <Link to={"/cart"}>Cart - {cartItems.length}</Link>
+          <Link to={"/cart"}>Cart {cartItems.length}</Link>
         </li>
       </div>
     </div>
