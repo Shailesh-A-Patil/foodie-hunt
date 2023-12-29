@@ -16,11 +16,11 @@ const Cart = () => {
     <div className="flex flex-col min-h-96 items-center">
       <button
         onClick={() => handleClear()}
-        className="p-3 m-4 border border-gray text-xl font-medium rounded-lg"
+        className="p-2 m-3 border border-gray text-l font-medium rounded-lg"
       >
         Clear cart
       </button>
-      <div className="w-[40%] min-w-64">
+      <div className="w-[50%] min-w-64 mb-4">
         {cartItems.map((item, index) => {
           return (
             <div
@@ -28,17 +28,17 @@ const Cart = () => {
               className="flex flex-wrap p-2 m-1 border-gray-400 border-b-2"
             >
               <div className="w-9/12">
-                <p className="font-medium text-lg">{item.card.info.name}</p>
-                <p className="font-medium text-lg">
+                <p className="font-medium">{item.card.info.name}</p>
+                <p className="font-medium">
                   {item.card.info.price / 100} - Rs
                 </p>
-                <p>{item.card.info.description}</p>
+                <p className="text-sm">{item.card.info.description}</p>
               </div>
               <div className="w-3/12">
                 <div className="absolute">
                   <button
                     onClick={() => handleRemove(item)}
-                    className="p-3 bg-black text-white rounded-lg"
+                    className="p-1 bg-black text-white rounded-lg"
                   >
                     Remove -
                   </button>

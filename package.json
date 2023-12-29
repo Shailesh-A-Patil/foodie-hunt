@@ -32,9 +32,8 @@
       "not op_mini all"
     ],
     "development": [
-      "last 19 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
+      "last 20 chrome version",
+      "last 20 safari version"
     ]
   },
   "devDependencies": {

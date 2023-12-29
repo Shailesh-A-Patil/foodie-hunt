@@ -13,8 +13,8 @@ const ButtonList = () => {
     <div className="flex flex-wrap">
       {buttons.map((value,index) => {
         return (
-          <div key={index} className="px-4 py-2 m-2 border rounded-xl hover:scale-105">
-            <span className="text-lg font-normal cursor-pointer">{value}</span>
+          <div key={index} className="px-3 py-2 m-1 border rounded-xl hover:scale-105">
+            <span className="text-base font-normal cursor-pointer">{value}</span>
           </div>
         );
       })}

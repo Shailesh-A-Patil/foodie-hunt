@@ -9,13 +9,13 @@ const Header = () => {
 
   return (
     <div className="flex justify-between shadow-md w-full">
-      <div className="h-28 w-28">
+      <div className="h-16 w-16">
         <Link to={"/"}>
           <img src={logo} alt="app-logo"></img>
         </Link>
       </div>
-      <div className="flex items-center list-none font-medium text-xl m-8">
-        <li className="mx-2 px-2 hover:text-orange-500">
+      <div className="flex items-center list-none font-medium text-base m-4">
+        <li className="mx-1 px-1 hover:text-orange-500">
           <Link to={"/"}>Home</Link>
         </li>
         <li className="mx-2 px-2">Online {isOnline ? "✅" : "🔴"}</li>

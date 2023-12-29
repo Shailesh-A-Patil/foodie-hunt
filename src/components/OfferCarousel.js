@@ -9,22 +9,22 @@ const OfferCarousel = (FOOD_CAROUSEL) => {
       items: 5,
     },
     desktop: {
-      breakpoint: { max: 3000, min: 1500 },
+      breakpoint: { max: 3000, min: 1400 },
       items: 4,
     },
     tablet: {
-      breakpoint: { max: 1500, min: 900 },
+      breakpoint: { max: 1400, min: 600 },
       items: 2,
     },
     mobile: {
-      breakpoint: { max: 900, min: 0 },
+      breakpoint: { max: 600, min: 0 },
       items: 1,
     },
   };
 
   return (
     <div>
-      <h2 className="font-bold text-2xl my-4">Best offers for you</h2>
+      <h2 className="font-medium text-xl my-4">Best offers for you</h2>
       <Carousel responsive={responsive}>
         {FOOD_CAROUSEL.data.imageGridCards.info.map((data) => (
           <div key={data.id} className="px-2 cursor-pointer">
