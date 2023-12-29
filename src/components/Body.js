@@ -44,11 +44,11 @@ const Body = () => {
         </div>
         <div className="flex flex-wrap m-auto justify-center">
           {" "}
-          {filterRes.map((res) => {
+          {filterRes.map((res, i) => {
             return (
               <Link
                 to={"/restaurant/" + res.info.id}
-                key={res.info.id}
+                key={i}
                 className="pr-4"
               >
                 <RestaurantCard {...res.info} />
